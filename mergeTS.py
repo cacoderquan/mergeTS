@@ -1,3 +1,13 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+#from itertools import zip
+from openpyxl import load_workbook
+from sklearn.decomposition import PCA
+from scipy.stats.stats import pearsonr
+from scipy.stats import linregress
+
+
 #read from excel file
 def read_excel(filename):
     wb = load_workbook(filename)
